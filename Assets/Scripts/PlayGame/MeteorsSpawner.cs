@@ -17,6 +17,8 @@ public class MeteorsSpawner : MonoBehaviour
 
 	private void Start()
 	{
+		currentMeteors = new List<Meteor>();
+
 		float ratio = (float)Screen.height / (float)Screen.width;
 		var ortho = Camera.main.orthographicSize;
 		screenSize = new Vector2(ortho / ratio, ortho);

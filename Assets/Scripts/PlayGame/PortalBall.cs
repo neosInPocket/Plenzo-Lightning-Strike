@@ -7,7 +7,7 @@ public class PortalBall : MonoBehaviour
 	[SerializeField] private SpriteRenderer spriteRenderer;
 	[SerializeField] private Rigidbody2D rigidbody2;
 	[SerializeField] private GameObject deathEffect;
-	[SerializeField] private Transform spawnTransform;
+	[SerializeField] private float spawnYValue;
 	[SerializeField] private float[] levelSpeeds;
 	private float speed;
 
@@ -18,7 +18,11 @@ public class PortalBall : MonoBehaviour
 	{
 		speed = levelSpeeds[DataCaptureController.Capture.speedUpgradeLevel];
 
-		transform.position = spawnTransform.position;
+		float ratio = (float)Screen.height / (float)Screen.width;
+		var ortho = Camera.main.orthographicSize;
+		var screenSize = new Vector2(ortho / ratio, ortho);
+
+		transform.position = new Vector2(0, 2 * screenSize.y * spawnYValue - screenSize.y);
 	}
 
 	public void Subscribe(Action onCrash, Action<Portal> onPortal)

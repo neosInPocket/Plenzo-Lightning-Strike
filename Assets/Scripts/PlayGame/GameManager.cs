@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
 	private void Start()
 	{
+
+
 		// if (DataCaptureController.Capture.tutorialAvaliable)
 		// {
 		// 	DataCaptureController.Capture.tutorialAvaliable = false;
@@ -35,6 +37,8 @@ public class GameManager : MonoBehaviour
 
 		// GetLevelStatistics();
 		// RefreshBars();
+
+		meteorsSpawner.Enable(true);
 	}
 
 	private void OnGamePlayShowEnd(int currentIndex)
