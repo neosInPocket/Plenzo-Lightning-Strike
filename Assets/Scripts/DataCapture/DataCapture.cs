@@ -5,7 +5,7 @@ public class DataCapture
 {
 	public int level;
 	public int goldCoins;
-	public int upgrade0;
+	public int speedUpgradeLevel;
 	public int upgrade1;
 	public bool volumeAvaliable;
 	public bool effectsAvaliable;
@@ -16,7 +16,7 @@ public class DataCapture
 		var capture = new DataCapture();
 		capture.level = 1;
 		capture.goldCoins = 1003;
-		capture.upgrade0 = 0;
+		capture.speedUpgradeLevel = 0;
 		capture.upgrade1 = 0;
 		capture.volumeAvaliable = true;
 		capture.effectsAvaliable = true;

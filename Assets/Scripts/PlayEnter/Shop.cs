@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +26,7 @@ public class Shop : MonoBehaviour
 			allCurrentCoins[i].UpdateData();
 		}
 
-		if (DataCaptureController.Capture.upgrade0 >= 10)
+		if (DataCaptureController.Capture.speedUpgradeLevel >= 10)
 		{
 			normalText0.color = Color.white;
 			button0.interactable = false;
@@ -72,13 +70,13 @@ public class Shop : MonoBehaviour
 			}
 		}
 
-		fillImage0.fillAmount = (float)DataCaptureController.Capture.upgrade0 / 10f;
+		fillImage0.fillAmount = (float)DataCaptureController.Capture.speedUpgradeLevel / 10f;
 		fillImage1.fillAmount = (float)DataCaptureController.Capture.upgrade1 / 10f;
 	}
 
 	public void Purchase0()
 	{
-		DataCaptureController.Capture.upgrade0++;
+		DataCaptureController.Capture.speedUpgradeLevel++;
 		DataCaptureController.Capture.goldCoins -= cost0;
 		DataCaptureController.Save();
 
