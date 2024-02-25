@@ -2413,7 +2413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9d86c3280df06743923a63354737bcf, type: 2}
   m_sharedMaterial: {fileID: -3588892282208838140, guid: a9d86c3280df06743923a63354737bcf, type: 2}
@@ -3173,7 +3173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12610530e3e5ee4eb64cd9053745a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  removePresets: 1
+  removePresets: 0
 --- !u!4 &829608452
 Transform:
   m_ObjectHideFlags: 0
@@ -3403,8 +3403,8 @@ MonoBehaviour:
   allCurrentCoins:
   - {fileID: 565857790}
   - {fileID: 1060911056}
-  cost0: 10
-  cost1: 20
+  cost0: 3
+  cost1: 2
 --- !u!1 &953844531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9d86c3280df06743923a63354737bcf, type: 2}
   m_sharedMaterial: {fileID: -3588892282208838140, guid: a9d86c3280df06743923a63354737bcf, type: 2}
@@ -5726,7 +5726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1671469899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6231,7 +6231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GIVES ONE MORE LIFE
+  m_text: INCREASES BALL SPEED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9d86c3280df06743923a63354737bcf, type: 2}
   m_sharedMaterial: {fileID: -3588892282208838140, guid: a9d86c3280df06743923a63354737bcf, type: 2}
@@ -6742,7 +6742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1960338162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7058,8 +7058,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 839245115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.03139202, y: 0.171}
+  m_AnchorMax: {x: 0.959456, y: 0.901}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7083,7 +7083,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GIVES ONE MORE LIFE
+  m_text: DECREASES METEOR SPEED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9d86c3280df06743923a63354737bcf, type: 2}
   m_sharedMaterial: {fileID: -3588892282208838140, guid: a9d86c3280df06743923a63354737bcf, type: 2}
@@ -7110,7 +7110,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 63.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -27,6 +27,7 @@ public class MeteorsSpawner : MonoBehaviour
 		{
 			var meteor = Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform);
 			currentMeteors.Add(meteor);
+			meteor.Avaliable = true;
 			meteor.Disable();
 		}
 	}
@@ -55,19 +56,20 @@ public class MeteorsSpawner : MonoBehaviour
 		float randomXPos = Random.Range(-screenSize.x + spawnXDelta + avaliable.Radius, screenSize.x - spawnXDelta - avaliable.Radius);
 		float yPos = screenSize.y + avaliable.Radius + spawnXDelta;
 		avaliable.transform.position = new Vector2(randomXPos, yPos);
+		avaliable.gameObject.SetActive(true);
+		avaliable.Enable();
 	}
 
 	private void Update()
 	{
 		if (!Enabled) return;
 		if (spawnProcess) return;
-		spawnProcess = true;
-
 		StartCoroutine(SpawnProcess());
 	}
 
 	private IEnumerator SpawnProcess()
 	{
+		spawnProcess = true;
 		SpawnOne();
 		yield return new WaitForSeconds(Random.Range(spawnDelays.x, spawnDelays.y));
 

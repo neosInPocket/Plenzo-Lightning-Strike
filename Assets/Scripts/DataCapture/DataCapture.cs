@@ -15,7 +15,7 @@ public class DataCapture
 	{
 		var capture = new DataCapture();
 		capture.level = 1;
-		capture.goldCoins = 1003;
+		capture.goldCoins = 0;
 		capture.speedUpgradeLevel = 0;
 		capture.upgrade1 = 0;
 		capture.volumeAvaliable = true;

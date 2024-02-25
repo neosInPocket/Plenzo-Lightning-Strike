@@ -34,6 +34,6 @@ public class AvaliableSounds : MonoBehaviour
 
 	public void SetVolumeEnabled(bool valueEnabled)
 	{
-		source.enabled = valueEnabled;
+		source.volume = valueEnabled ? 1f : 0f;
 	}
 }

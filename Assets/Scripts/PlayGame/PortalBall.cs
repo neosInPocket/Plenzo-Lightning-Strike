@@ -14,7 +14,7 @@ public class PortalBall : MonoBehaviour
 	private Action OnCrash;
 	private Action<Portal> OnPortal;
 
-	private void Start()
+	public void Initialize()
 	{
 		speed = levelSpeeds[DataCaptureController.Capture.speedUpgradeLevel];
 
@@ -25,30 +25,25 @@ public class PortalBall : MonoBehaviour
 		transform.position = new Vector2(0, 2 * screenSize.y * spawnYValue - screenSize.y);
 	}
 
-	public void Subscribe(Action onCrash, Action<Portal> onPortal)
+	public void SubscribeCrash(Action onCrash)
 	{
-		OnCrash = onCrash;
-		OnPortal = onPortal;
+		OnCrash += onCrash;
+	}
+
+	public void SubscribeOnPortal(Action<Portal> onPortal)
+	{
+		OnPortal += onPortal;
+	}
+
+	public void ClearAllSubscribers()
+	{
+		OnPortal = null;
+		OnCrash = null;
 	}
 
 	public void SetSpeedNormalized(Vector2 speed)
 	{
-		rigidbody2.velocity = speed * this.speed;
-	}
-
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if (collision.collider.TryGetComponent<InvisibleEdge>(out InvisibleEdge edge))
-		{
-			Lose();
-			return;
-		}
-
-		if (collision.collider.TryGetComponent<Meteor>(out Meteor meteor))
-		{
-			Lose();
-			return;
-		}
+		rigidbody2.velocity = speed.normalized * this.speed;
 	}
 
 	private void OnTriggerEnter2D(Collider2D collider)
@@ -56,6 +51,19 @@ public class PortalBall : MonoBehaviour
 		if (collider.TryGetComponent<Portal>(out Portal portal))
 		{
 			OnPortal?.Invoke(portal);
+			return;
+		}
+
+		if (collider.TryGetComponent<InvisibleEdge>(out InvisibleEdge edge))
+		{
+			Lose();
+			return;
+		}
+
+		if (collider.TryGetComponent<Meteor>(out Meteor meteor))
+		{
+			Lose();
+			return;
 		}
 	}
 
