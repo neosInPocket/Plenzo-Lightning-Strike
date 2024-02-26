@@ -3173,7 +3173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12610530e3e5ee4eb64cd9053745a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  removePresets: 1
+  removePresets: 0
 --- !u!4 &829608452
 Transform:
   m_ObjectHideFlags: 0
