@@ -11,5 +11,50 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayGame.unity
     guid: f3eb0070b30e8d24a8f35517c705cb54
+  - enabled: 1
+    path: Assets/Scenes/LightningScene.unity
+    guid: 16410b3067e6585409a443552761cc6e
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 1.unity
+    guid: 75c513cfb0d954b44a99d8e7a2de975a
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 2.unity
+    guid: 2476fc4bf4560944487f2b78397004ea
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 3.unity
+    guid: 0b3c3186cfc63d449a1f9ab5cd9ae4ff
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 4.unity
+    guid: ddbe9f56e0062d941ae9b1b7993cc544
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 5.unity
+    guid: 9ba04a82b4b19e848ba3a79074d9b105
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 6.unity
+    guid: d4aaa0b4e2e53c8439075f6e582da59e
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 7.unity
+    guid: 21ee4bde0714e2f48aa356b6de95af5f
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 8.unity
+    guid: 9730286ac4b64904d8357e53b30acea1
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 9.unity
+    guid: 3e9f3dfd22fcc654ebd80c8348c4ab20
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 10.unity
+    guid: dc12389957bbeb146bbe45081d663ebf
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 11.unity
+    guid: 9adb4bd6cf458bc408e2b6e8936f6d54
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 12.unity
+    guid: 254aa2cda639d7d4083ee64019ec0f78
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 13.unity
+    guid: fef9a710e5fb3ee4d90c9eb9ffd07063
+  - enabled: 1
+    path: Assets/Scenes/LightningScene 14.unity
+    guid: 77917beaab5c6b7428ff1814aa447032
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: efdadb787b3708c488d2af5542e1a928, type: 2}
