@@ -3173,7 +3173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12610530e3e5ee4eb64cd9053745a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  removePresets: 0
+  removePresets: 1
 --- !u!4 &829608452
 Transform:
   m_ObjectHideFlags: 0
@@ -6816,7 +6816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 0.5
+  m_AspectRatio: 0.5565891
 --- !u!114 &1970021908
 MonoBehaviour:
   m_ObjectHideFlags: 0
